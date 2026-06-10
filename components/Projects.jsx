@@ -16,7 +16,7 @@ const PROJECTS = [
   {
     id: "site-maman",
     title: "Site vitrine",
-    subtitle: "Projet personnel · Site de ma mère",
+    subtitle: "Projet personnel · Psycool",
     description:
       "Création d'un site vitrine complet de A à Z. Design personnalisé, responsive, optimisé pour le référencement. Une belle occasion de mettre en pratique mes compétences front-end dans un contexte réel.",
     tags: ["HTML5", "CSS3", "JavaScript", "Responsive", "SEO"],
