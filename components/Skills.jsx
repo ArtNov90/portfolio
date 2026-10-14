@@ -1,26 +1,26 @@
 "use client";
 
-const SALESFORCE = [
-  { name: "Apex", level: 90 },
-  { name: "Lightning Web Components", level: 85 },
-  { name: "Flow Builder", level: 85 },
-  { name: "SOQL / SOSL", level: 80 },
-  { name: "Profils & Permission Sets", level: 80 },
+const QA = [
+  { name: "Tests fonctionnels (recette)", level: 88 },
+  { name: "Rédaction cas de test", level: 85 },
+  { name: "Tests API REST (Postman)", level: 85 },
+  { name: "Rapports de bugs / anomalies", level: 82 },
+  { name: "Tests de régression", level: 80 },
+  { name: "Tests Salesforce (Apex tests)", level: 80 },
   { name: "CI/CD · GitLab Pipelines", level: 75 },
-  { name: "Metadata API", level: 75 },
 ];
 
-const FULLSTACK = [
+const TECH = [
   { name: "Java / Spring Boot", level: 85 },
   { name: "React / Next.js", level: 82 },
   { name: "MySQL · SQL Server", level: 80 },
   { name: "API REST", level: 85 },
-  { name: "JPA / Hibernate", level: 78 },
+  { name: "Salesforce (Apex, LWC, Flow)", level: 88 },
   { name: "JavaScript (ES6+)", level: 82 },
   { name: "HTML5 / CSS3", level: 80 },
 ];
 
-const TOOLS = ["Git / GitLab", "GitHub Actions", "Postman", "VS Code", "IntelliJ IDEA", "Salesforce CLI", "Docker (notions)", "Agile / Scrum"];
+const TOOLS = ["Postman", "Git / GitLab", "Jira / Trello", "VS Code", "IntelliJ IDEA", "Agile / Scrum", "GitHub Actions", "Salesforce CLI"];
 
 function SkillBar({ name, level, color }) {
   return (
@@ -55,28 +55,28 @@ export default function Skills() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-10 mb-12">
-          {/* Salesforce */}
+          {/* QA */}
           <div className="bg-[#0d1117] rounded-xl border border-[#30363d] p-6 card-hover hover:border-[#0070D2]/50">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-8 h-8 rounded-lg bg-[#0070D2]/20 flex items-center justify-center">
-                <span className="text-[#0070D2] text-sm font-bold">SF</span>
+                <span className="text-[#0070D2] text-sm font-bold">QA</span>
               </div>
-              <h3 className="text-white font-semibold text-lg">Salesforce</h3>
+              <h3 className="text-white font-semibold text-lg">Qualité & Tests</h3>
             </div>
-            {SALESFORCE.map((s) => (
+            {QA.map((s) => (
               <SkillBar key={s.name} {...s} color="blue" />
             ))}
           </div>
 
-          {/* Fullstack */}
+          {/* Tech */}
           <div className="bg-[#0d1117] rounded-xl border border-[#30363d] p-6 card-hover hover:border-[#4CAF50]/50">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-8 h-8 rounded-lg bg-[#2E7D32]/20 flex items-center justify-center">
-                <span className="text-[#4CAF50] text-sm font-bold">FS</span>
+                <span className="text-[#4CAF50] text-sm font-bold">DEV</span>
               </div>
-              <h3 className="text-white font-semibold text-lg">Fullstack</h3>
+              <h3 className="text-white font-semibold text-lg">Stack technique</h3>
             </div>
-            {FULLSTACK.map((s) => (
+            {TECH.map((s) => (
               <SkillBar key={s.name} {...s} color="green" />
             ))}
           </div>

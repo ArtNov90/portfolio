@@ -2,10 +2,10 @@
 import { useEffect, useState } from "react";
 
 const ROLES = [
-  "Développeur Salesforce",
-  "Développeur Fullstack Java/React",
-  "Apex · LWC · Flow Builder",
-  "Spring Boot · React · MySQL",
+  "Testeur QA · Tests fonctionnels & techniques",
+  "Développeur Salesforce / Fullstack",
+  "Rédaction de cas de test · Recette",
+  "API Testing · Postman · CI/CD",
 ];
 
 export default function Hero() {
@@ -69,8 +69,9 @@ export default function Hero() {
               </p>
             </div>
             <p className="text-gray-400 text-base leading-relaxed mb-8 max-w-lg">
-              Développeur basé à <span className="text-white">Montpellier</span>, spécialisé Salesforce et Fullstack Java/React.
-              Passionné par la création de solutions robustes et bien architecturées.
+              Développeur basé à <span className="text-white">Montpellier</span>, avec une double casquette dev & QA.
+              Ma connaissance du code (Salesforce, Java, React) me permet de tester en profondeur,
+              rédiger des cas de test pertinents et détecter les anomalies là où elles se cachent.
             </p>
 
             {/* CTAs */}
@@ -91,7 +92,7 @@ export default function Hero() {
 
             {/* Badges */}
             <div className="flex flex-wrap gap-2 mt-8">
-              {["Salesforce", "Java", "React", "Spring Boot", "MySQL", "CI/CD"].map((t) => (
+              {["Tests fonctionnels", "Postman", "Salesforce", "Java", "React", "CI/CD", "Agile / Scrum"].map((t) => (
                 <span key={t} className="skill-badge px-3 py-1 rounded-full text-xs font-mono text-gray-300">
                   {t}
                 </span>
@@ -113,9 +114,9 @@ export default function Hero() {
   `}<span className="text-[#0070D2]">"name"</span>{`: `}<span className="text-[#4CAF50]">"Arthur Novara"</span>{`,
   `}<span className="text-[#0070D2]">"location"</span>{`: `}<span className="text-[#4CAF50]">"Montpellier, FR"</span>{`,
   `}<span className="text-[#0070D2]">"specialties"</span>{`: [
-    `}<span className="text-[#4CAF50]">"Salesforce"</span>{`,
-    `}<span className="text-[#4CAF50]">"Java / Spring Boot"</span>{`,
-    `}<span className="text-[#4CAF50]">"React / Next.js"</span>
+    `}<span className="text-[#4CAF50]">"Tests fonctionnels & API"</span>{`,
+    `}<span className="text-[#4CAF50]">"Salesforce / Java / React"</span>{`,
+    `}<span className="text-[#4CAF50]">"Rédaction cas de test"</span>
 {`  ],`}
   <span className="text-[#0070D2]">"experience"</span>{`: `}<span className="text-orange-400">2</span>{` years,
   `}<span className="text-[#0070D2]">"certifications"</span>{`: [

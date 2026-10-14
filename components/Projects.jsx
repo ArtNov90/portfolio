@@ -6,8 +6,8 @@ const PROJECTS = [
     title: "Qualit'Air",
     subtitle: "Application Web Environnementale",
     description:
-      "Application fullstack complète permettant de visualiser la qualité de l'air, la météo et des données de population. API REST Spring Boot, interface React/Next.js, authentification JWT, base de données MySQL.",
-    tags: ["Spring Boot", "React", "MySQL", "JWT", "REST API", "JPA/Hibernate"],
+      "Application fullstack conçue et testée de A à Z. Rédaction des cas de test fonctionnels, tests API REST avec Postman, validation des endpoints (auth JWT, données environnementales), tests de régression sur l'interface React/Next.js.",
+    tags: ["Tests API", "Postman", "Spring Boot", "React", "MySQL", "JWT"],
     color: "blue",
     github: "https://github.com/ArtNov90",
     icon: "🌍",
@@ -18,8 +18,8 @@ const PROJECTS = [
     title: "Site vitrine",
     subtitle: "Projet personnel · Psycool",
     description:
-      "Création d'un site vitrine complet de A à Z. Design personnalisé, responsive, optimisé pour le référencement. Une belle occasion de mettre en pratique mes compétences front-end dans un contexte réel.",
-    tags: ["HTML5", "CSS3", "JavaScript", "Responsive", "SEO"],
+      "Site vitrine réalisé et recetté en conditions réelles. Tests cross-browser, vérification responsive, validation des formulaires et des liens. Livraison après recette complète côté client.",
+    tags: ["Tests cross-browser", "Responsive", "HTML5", "CSS3", "JavaScript"],
     color: "green",
     github: null,
     icon: "🌐",

@@ -2,15 +2,15 @@
 
 const EXPERIENCES = [
   {
-    title: "Développeur Salesforce",
+    title: "Développeur / QA Salesforce",
     company: "CGI · ESN",
     period: "Mars 2024 – Oct. 2025",
     type: "CDI",
     bullets: [
-      "Développement et maintenance d'applications CRM sous Salesforce (Apex, Flow, LWC)",
-      "Implémentation de règles métiers complexes sur objets standard et personnalisés",
-      "Déploiements multi-environnements via GitLab CI/CD (sandbox → staging → prod)",
-      "Collaboration en équipe Agile Scrum, revues de code, documentation technique",
+      "Rédaction et exécution de cas de test fonctionnels sur les applications CRM Salesforce",
+      "Tests de régression lors des déploiements multi-environnements (sandbox → staging → prod)",
+      "Identification, documentation et suivi des anomalies en collaboration avec l'équipe dev",
+      "Tests API REST avec Postman, revues de code et validation des livrables en équipe Agile Scrum",
     ],
     color: "blue",
   },
